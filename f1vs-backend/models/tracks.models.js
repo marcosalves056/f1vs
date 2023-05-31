@@ -17,6 +17,10 @@ const TracksSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  quantidadeVotos: {
+    type: Number,
+    required: true,
+  },
 });
 
 const Tracks = mongoose.model('tracks', TracksSchema);
